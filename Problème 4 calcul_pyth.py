@@ -1,6 +1,3 @@
-
-
-
 class Faudio:
     """
     Classe correspondant à un fichier audio dans le problème 4 de l'édition 2023 du TFJM
@@ -49,31 +46,33 @@ class Faudio:
         self.res = len(notes)
         self.file =  {}
         count = 1
-        for i in range (0,self.res) :
-            self.file[count/self.res] = notes[count-1]
+        for i in range(0, self.res):
+            self.file[f"{count}/{self.res}"] = notes[i]
             count += 1
+    
     def affiche_fichier(self):
-        for k in range (0,self.res):
-            print(f"{k+1}/{self.res} = {self.file[(k+1)/self.res]}")
+        for k in range(0, self.res):
+            print(f"{k+1}/{self.res} = {self.file[f'{k+1}/{self.res}']}")
+    
     def affiche_resolution(self):
         print(self.res)
-    def value(self,pos,res):
+    
+    def value(self, pos, res):
         pos = 2*pos-1
         res_2 = 2*res
-        for i in range (0,self.res):
+        for i in range(0, self.res):
             if (i+1)/self.res < pos/res_2:
                 True
             elif (i+1)/self.res > pos/res_2:
-                return(self.file[(i+1)/self.res])
+                return self.file[f"{(i+1)}/{self.res}"]
             elif (i+1)/self.res == pos/res_2:
-                return('silence')
-            
-    def changement_de_resolution(self,m):
+                return 'silence'
+    
+    def changement_de_resolution(self, m):
         self.new = {}
         count2 = 1
-        for i in range (0,8):
-            self.new[count2/m] = self.value(count2,m)
+        for i in range(0, m):
+            self.new[f"{count2}/{m}"] = self.value(count2, m)
             count2 += 1
         self.file = self.new
-        self.res = m 
-        
+        self.res = m
