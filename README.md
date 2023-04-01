@@ -28,10 +28,11 @@ Classe correspondant à un fichier audio dans le problème 4 de l'édition 2023 
     
 ## Changement de résolution du fichier  
 
-    Pour changer de résolution, il faut utiliser changement_de_resolution, dont voici un exemple de l'utilisation en utilisant les valeurs des 3 exemples précédents :
+    Pour changer de résolution, il faut utiliser changement_de_resolution() .
     
 >>> f.changement_de_resolution(8)
 
+Puis les test du changement de résolution avec les valeurs des questions précédentes
 >>> f.affiche_resolution()
 
 8
