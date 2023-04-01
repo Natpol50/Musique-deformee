@@ -2,8 +2,11 @@
 Projet d'automatisation du calcul de nouveau fichier dans le but de résoudre le Problème 4 de l'édition 2023 du TFJM
 Classe correspondant à un fichier audio dans le problème 4 de l'édition 2023 du TFJM
     
+    
+ ## Création de fichier    
+ 
     Pour créer un nouveau fichier, il faut faire comme ceci :
-## Création de fichier    
+
 >>> fichier_original = Faudio(("saumon","orange","silence","rouge"))
 
 ## Affichage de fichier
