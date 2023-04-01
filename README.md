@@ -1,6 +1,5 @@
 # Musique-derformee
 Projet d'automatisation du calcul de nouveau fichier dans le but de résoudre le Problème 4 de l'édition 2023 du TFJM
-Classe correspondant à un fichier audio dans le problème 4 de l'édition 2023 du TFJM
     
     
  ## Création de fichier    
@@ -50,6 +49,8 @@ Puis les test du changement de résolution avec les valeurs des questions préc�
 
 
 ---
+[TFJM](https://tfjm.org/)
+
 
 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
