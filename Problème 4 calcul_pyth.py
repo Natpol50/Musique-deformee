@@ -8,7 +8,7 @@ class Faudio:
 
     Pour afficher le fichier, il faut faire comme ceci :
 
->>> f.affiche_fichier()
+>>> fichier_original.affiche_fichier()
 
 1/4 = saumon
 2/4 = orange
@@ -17,20 +17,20 @@ class Faudio:
 
     Pour afficher la résolution du fichier, il faut faire comme ceci :
     
->>> f.affiche_resolution()
+>>> fichier_original.affiche_resolution()
 
 4
     
     
     Pour changer de résolution, il faut utiliser changement_de_resolution, dont voici un exemple de l'utilisation en utilisant les valeurs des 3 exemples précédents :
     
->>> f.changement_de_resolution(8)
+>>> fichier_original.changement_de_resolution(8)
 
->>> f.affiche_resolution()
+>>> fichier_original.affiche_resolution()
 
 8
 
->>> f.affiche_fichier()
+>>> fichier_original.affiche_fichier()
 
 1/8 = saumon
 2/8 = saumon
