@@ -1,4 +1,4 @@
-# Musique-derformee
+# Musique-deformee
 Projet d'automatisation du calcul de nouveau fichier dans le but de résoudre le Problème 4 de l'édition 2023 du TFJM
     
     
